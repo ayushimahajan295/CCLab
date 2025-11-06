@@ -1,0 +1,4 @@
+bison -d infix2postfix.y
+flex infix2postfix.l
+gcc infix2postfix.tab.c lex.yy.c -o infix2postfix.exe
+infix2postfix.exe < input_infix2postfix.txt

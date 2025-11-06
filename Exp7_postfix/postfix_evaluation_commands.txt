@@ -1,0 +1,20 @@
+:: create a junction (only needs to be done once)
+mklink /J "C:\GnuWin32" "C:\Program Files (x86)\GnuWin32"
+
+:: prepend the junction bin to PATH for current session
+set PATH=C:\GnuWin32\bin;%PATH%
+
+:: verify bison now works
+bison --version
+m4 --version
+
+:: now run your normal build (from your project folder)
+D:
+cd /codes/CCLab/Exp7
+
+bison -d postfix_evaluation.y
+flex postfix_evaluation.l
+gcc postfix_evaluation.tab.c lex.yy.c -o postfix_eval.exe
+postfix_eval.exe
+
+

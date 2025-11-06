@@ -1,0 +1,2 @@
+Lex is fun. Lex makes lexical analysis easy.
+Lex helps in compiler design.

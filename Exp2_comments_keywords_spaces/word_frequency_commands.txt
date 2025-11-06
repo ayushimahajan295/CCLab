@@ -1,0 +1,6 @@
+D:\codes\CCLab\Exp2>flex word_frequency.l
+
+D:\codes\CCLab\Exp2>gcc lex.yy.c -o wordfreq.exe
+
+D:\codes\CCLab\Exp2>wordfreq.exe Lex input_word_frequency.txt
+Frequency of word 'Lex' (case-insensitive): 3

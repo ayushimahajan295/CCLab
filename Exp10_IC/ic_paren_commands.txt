@@ -1,0 +1,9 @@
+D:\codes\CCLab\Exp10>flex ic_paren.l
+
+D:\codes\CCLab\Exp10>bison -d ic_paren.y
+
+D:\codes\CCLab\Exp10>gcc ic_paren.tab.c lex.yy.c -o icparser.exe -mconsole
+
+D:\codes\CCLab\Exp10>icparser.exe
+Enter statements (end with EOF). Example: a = (b + c) * (d - 2);
+a = (b + c) * (d - 2);  x = ((a + b) * (c + d)) / (e - f); y = - (a + (b * (c + d)));

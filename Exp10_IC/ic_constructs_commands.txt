@@ -1,0 +1,11 @@
+D:\codes\CCLab\Exp10>flex ic_constructs.l
+
+D:\codes\CCLab\Exp10>bison -d ic_constructs.y
+
+D:\codes\CCLab\Exp10>gcc ic_constructs.tab.c lex.yy.c -o icparser.exe -mconsole
+
+D:\codes\CCLab\Exp10>icparser.exe
+Enter code (use ;, {}, if, else, while). Example:
+if (a < b) { c = a + b; } else { c = a - b; }
+
+if (a < b) { c = a + b; } else { c = a - b; } while (c < 10) {  c = c + 1; }

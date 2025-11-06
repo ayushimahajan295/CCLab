@@ -1,0 +1,4 @@
+bison -d postfix_evaluation_decimal.y
+flex postfix_evaluation_decimal.l
+gcc postfix_evaluation_decimal.tab.c lex.yy.c -o postfix_evaluation_decimal.exe
+postfix_evaluation_decimal.exe < input_postfix_evaluation_decimal.txt
